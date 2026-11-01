@@ -7,7 +7,7 @@
 #include <winsock2.h>
 
 #define N      5        
-#define PORTA  51171
+#define PORTA  27015
 #define BUF    256
 
 typedef struct {
