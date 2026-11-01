@@ -42,7 +42,7 @@ Fluxo, como nos slides da disciplina:
 
 ### Protocolo
 
-As mensagens são linhas de texto terminadas em `\n`, sobre TCP (porta **51171**).
+As mensagens são linhas de texto terminadas em `\n`, sobre TCP (porta **27015**).
 
 ```
 Servidor -> Cliente:  STATE <heroiLinha> <heroiColuna> <armaLinha> <armaColuna> <temArma> <cheiro> <status>
@@ -76,7 +76,7 @@ gcc client.c -o client.exe -lws2_32
 
 ## Como jogar
 
-1. Execute **primeiro** o `server.exe`. Ele aguarda o Herói na porta 51171.
+1. Execute **primeiro** o `server.exe`. Ele aguarda o Herói na porta 27015.
 2. Execute o `client.exe` e digite o **IP do computador que está rodando o servidor** (ou apenas ENTER para `127.0.0.1`).
 3. Alternem os turnos até alguém vencer.
 
@@ -94,8 +94,8 @@ gcc client.c -o client.exe -lws2_32
 |---|---|
 | `undefined reference to WSAStartup` (ou `socket`, `connect`...) | Faltou o `-lws2_32` no linker |
 | Erro `10061` ao conectar | O servidor não está rodando, ou o IP/porta está errado |
-| Erro `10060` ao conectar | Firewall bloqueando; permita o programa ou libere a porta TCP 51171 |
-| Erro `10048` no `bind` | A porta 51171 já está em uso (feche o servidor anterior) |
+| Erro `10060` ao conectar | Firewall bloqueando; permita o programa ou libere a porta TCP 27015 |
+| Erro `10048` no `bind` | A porta 27015 já está em uso (feche o servidor anterior) |
 
 ## Autoria
 
