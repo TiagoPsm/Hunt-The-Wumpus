@@ -6,7 +6,7 @@
 #include <ctype.h>
 
 #define N      5
-#define PORTA  51171
+#define PORTA  27015
 #define BUF    256
 
 int enviarLinha(SOCKET s, const char *txt) {
